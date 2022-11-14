@@ -121,13 +121,18 @@ nav ul li + li {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     transition: all .3s ease-in-out;
-    height: 80vh;
+    height: 60vh;
 }
 
 .text-wrapper h2 {
     font-size: 6rem;
     color: #fff;
+}
+
+span {
+    text-decoration: underline var(--app-red);
 }
 
 button {
@@ -140,7 +145,6 @@ button {
     text-align: center;
 	text-decoration:none;
     transition: all .5s ease-in-out;
-	text-shadow:0px 1px 0px #2f6627;
     margin-top: 12px;
 }
 
@@ -154,28 +158,26 @@ button:hover{
 
 /* ---------------------------------------------------- */
 
-.form-bg{
-
-}
 
 figure {
     width: 100vh;
     display: flex;
-    margin: 30px auto;
+    margin: 20px auto;
 }
 
 figure p {
-    font-size: 18px;
+    font-size: 20px;
     text-transform: uppercase;
     font-weight: 600;
     text-align: center;
 }
 
 .form-wrapper {
-    width: 60vh;
+    width: 70vh;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     display: flex;
-    margin: 20px auto;
+    margin: 40px auto;
+    padding: 30px 0;
     border-radius: 6px;
 }
 
@@ -199,30 +201,39 @@ input, textarea {
     color: rgb(0, 0, 0);
     font-size: 18px;
     font-weight: 400;
-    padding: 10px;
+    padding: 12px;
     width: 100%;
     transition: all .5s ease-in-out;
-    background-color: rgb(254, 240, 240);
+    border: .2px solid var(--app-red);
     border-radius: 6px;
 }
 
 .submit-btn {
-    padding: 20px;
+    width: 100%;
+    display: grid;
+    justify-content: right;
+    padding: 0 20px;
 }
 
 input[type="submit"]{
     color: #fff;
     font-weight: 600;
+    text-transform: uppercase;
     background-color: var(--app-blue);
     border-radius: 4px;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 16px;
     transition: all .4s ease-in-out;
-    display: inline;
 }
 
 input[type="submit"]:hover {
     background-color: var(--app-blue-hover);
+}
+
+p {
+    text-align: center;
+    font-size: 13px;
+    font-weight: 400;
 }
 
 /* ---------------------------------------------------- */
