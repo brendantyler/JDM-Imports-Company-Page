@@ -153,34 +153,44 @@ button:hover{
 /* Form                                    */
 
 /* ---------------------------------------------------- */
-
-form {
-    border: 1px solid red;
-}
-
 .form-wrapper {
+    width: 60vh;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    margin: auto;
-    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    border-radius: 6px;
+    height: 100vh;
 }
 
-input {
+.form-input {
+    display: flex;
+    padding: 20px;
+  }
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 80vh;
+}
+
+input, textarea {
     color: rgb(0, 0, 0);
     font-size: 14px;
     font-weight: 400;
+    padding: 5px;
+    width: 100%;
     transition: all .5s ease-in-out;
     background-color: rgb(254, 240, 240);
     border-radius: 6px;
 }
 
-.form-names {
-    display: flex;
-}
 
 input[type="submit"]{
-    color: rgb(8, 8, 8);
+    color: #fff;
     font-weight: 600;
-    background-color: var(--input-btn-color);
+    background-color: var(--app-blue);
+    width: 80px;
     border-radius: 4px;
     cursor: pointer;
     font-size: 15px;
@@ -188,7 +198,7 @@ input[type="submit"]{
 }
 
 input[type="submit"]:hover {
-    background-color: rgb(92, 34, 0);
+    background-color: var(--app-blue-hover);
 }
 
 /* ---------------------------------------------------- */
