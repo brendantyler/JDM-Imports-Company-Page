@@ -203,3 +203,9 @@ footer {
 .footer .icon:hover {
     background-color: #1a1d2820;
 }
+.half {
+    width: 50%;
+}
+.copyright {
+    justify-content: right;
+}
