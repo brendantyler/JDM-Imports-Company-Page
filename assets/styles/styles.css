@@ -38,6 +38,14 @@
 
 }
 
+
+
+/* ---------------------------------------------------- */
+
+/* Hero and header                                      */
+
+/* ---------------------------------------------------- */
+
 .hero{
     height: 100vh;
     background: rgb(255, 0, 0)url(../img/Hero-image.jpg) center center / cover ;
@@ -49,6 +57,7 @@
     width: 100%;
 }
 
+<<<<<<< HEAD
 .flexbox {
     display: flex;
 }
@@ -60,6 +69,8 @@
 /* ---------------------------------------------------- */
 
 
+=======
+>>>>>>> 813c3136dd391b7ebdb7a07412c9279e79732d0e
 header {
     height: 56px;
     background-color: rgb(255, 60, 87, .6);
@@ -171,32 +182,35 @@ button {
 button:hover{
     background-color: var(--app-blue-hover);
 }
+
 /* ---------------------------------------------------- */
 
 /* Products                                             */
 
 /* ---------------------------------------------------- */
-
-.products{
+.inventory h1{
   padding: 5vh;
+  text-align: center;
+}
+.products{
   box-sizing: border-box;
 }
-
-img {
+img{
   object-fit: fill;
 }
-
 .product-showcase {
   max-width: 1000px;
   position: relative;
   margin: auto;
 }
-
+.products{
+  padding-bottom: 5vh;
+}
 .product { 
   display: none;
 }
-
 .prev, .next {
+  background-color: rgba(0, 0, 0, 0.1);
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -217,12 +231,11 @@ img {
 }
 
 .prev:hover, .next:hover {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-
 .product-desc {
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0,0,0,0.5);
   color: #f2f2f2;
   font-size: 15px;
   padding: 8px 12px;
