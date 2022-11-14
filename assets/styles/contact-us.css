@@ -177,7 +177,6 @@ figure p {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     display: flex;
     margin: 40px auto;
-    padding: 30px 0;
     border-radius: 6px;
 }
 
@@ -190,21 +189,22 @@ figure p {
     display: flex;
     flex-direction: column;
     width: 80vh;
+    background-color: #f0f2f4;;
 }
 
 h3 {
     font-size: 3rem;
     text-align: center;
+    margin: 10px 0 25px 0;
 }
 
-input, textarea {
+input[type="text"], textarea {
     color: rgb(0, 0, 0);
     font-size: 18px;
     font-weight: 400;
     padding: 12px;
     width: 100%;
     transition: all .5s ease-in-out;
-    border: .2px solid var(--app-red);
     border-radius: 6px;
 }
 
@@ -217,13 +217,15 @@ input, textarea {
 
 input[type="submit"]{
     color: #fff;
-    font-weight: 600;
-    text-transform: uppercase;
     background-color: var(--app-blue);
-    border-radius: 4px;
-    cursor: pointer;
+    font-weight: 600;
     font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
     transition: all .4s ease-in-out;
+    margin-bottom: 20px;
 }
 
 input[type="submit"]:hover {
