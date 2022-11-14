@@ -6,7 +6,7 @@
         <meta name="author" content="Enjae Antonio">
         <meta name="description" content="Intro to JavaScript">
         <meta name="Enjae" content=" HTML, CSS, SEO, web, web development">
-        <title>Home</title>   
+        <title>Home | JDM Imports</title>   
         <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
         <link rel="stylesheet" href="assets/styles/styles.css" media="screen"> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -18,19 +18,31 @@
                 <header>
                     <div class="container flexbox">
                         <div class="title">
-                            <h1><a href="">JDM Imports</a></h1>
+                            <h1><a href="index.html">JDM Imports</a></h1>
                         </div>
-                        <nav>
+                        <nav class="og">
                             <ul>
-                                <li><a target="_blank" href="about-us">About us</a></li>
-                                <li><a target="_blank" href="contact-us">Contact us</a></li>
+                                <li><a href="#about">About us</a></li>
+                                <li><a href="contact-us.html">Contact us</a></li>
+                            </ul>
+                        </nav>
+                        <nav class="new flexbox">
+                            <ul class="flexbox">
+                                <li><a href="#about"><div class="nav-icon flexbox">
+                                    <i class="fa-solid fa-user fanavicon"></i>
+                                </div></a></li>
+                                <li><a href="contact-us.html"><div class="nav-icon flexbox">
+                                    <i class="fa-solid fa-envelope fanavicon"></i>
+                                </div></a></li>
                             </ul>
                         </nav>
                 </header>
+
+
                 <section class="text-and-btn">
                     <div class="landing-text">
                         <h2>
-                          We are a company based in Winnipeg, Manitoba. Founded by Seth, Enjae, and Brendan.
+                            We are a company based in Winnipeg, Manitoba. Founded by Seth, Enjae, and Brendan.
                         </h2>
                     </div>
                     <div class="more-btn-box get-started">
@@ -40,20 +52,83 @@
             </div>
         </section>
         
-        <footer>
-            <div class="flex"></div>
-            <div class="home-icon">
-                <i class="fa-solid fa-house"></i>
+        <section class="about">
+          <div class="about header">
+            <h1></h1>
+
+          </div>
+        </section>
+
+        <section id="inventory" class="inventory" >
+          <h1>2023 Inventory</h1>
+            <div class="products">
+              <div class="container ">
+                  <div class="product-showcase"> 
+                      <div class="product fade">
+                        <div class="product-tracker">1 / 4</div>
+                        <img src="assets/img/r34-gtr.jpg" alt="placeholder">
+                        <div class="product-desc">NISSAN GTR R34</div>
+                      </div>
+                      <div class="product fade">
+                        <div class="product-tracker">2 / 4</div>
+                        <img src="assets/img/supra-mk4.jpg" alt="placeholder">
+                        <div class="product-desc">SUPRA MK4</div>
+                      </div>
+                      <div class="product fade">
+                        <div class="product-tracker">3 / 4</div>
+                        <img src="assets/img/widebody-brz.jpg" alt="placeholder">
+                        <div class="product-desc">SUBARU BRZ (Widebody Kit)</div>
+                      </div>
+                      <div class="product fade">
+                        <div class="product-tracker">4 / 4</div>
+                        <img src="assets/img/wrx-sti.jpg" alt="placeholder">
+                        <div class="product-desc">SUBARU WRX STI</div>
+                      </div>
+
+                      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  </div> 
+
+                  <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                  </div>         
+              </div>
             </div>
-            <a href="index.html">Home</a>
-            <div class="about-icon">
-                <i class="fa-solid fa-users"></i>
+            </section>
+        <footer class="flexbox">
+            <div class="container footer flexbox">
+                <div class="links flexbox">
+                    <a href="index.html">
+                        <div class="footer-over flexbox">
+                            <div class="icon flexbox">
+                                <i class="fa-solid fa-house"></i>
+                            </div>
+                            <p>Home</p>
+                        </div>
+                    </a>
+                    <a href="#about">
+                        <div class="footer-over flexbox">
+                            <div class="icon flexbox">
+                                <i class="fa-solid fa-users"></i>
+                            </div>
+                            <p>About Us</p>
+                        </div>
+                    </a>
+                    <a href="contact-us.html">
+                        <div class="footer-over flexbox">
+                            <div class="icon flexbox">
+                                <i class="fa-solid fa-message"></i>
+                            </div>
+                            <p>Contact Us</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="copyright half flexbox">
+                    <p>&copy; JDM Imports 2022</p>
+                </div>
             </div>
-            <a href="#about">About Us</a>
-            <div class="contact-icon">
-                <i class="fa-solid fa-message"></i>
-            </div>
-            <a href="contact-us.html">Contact Us</a>
         </footer>
         
     </body>
