@@ -29,7 +29,9 @@
     --app-footer-height: 112px;
 }
 
-
+* {
+    transition: font-size 0.2s;
+}
 .container {
 
     width: min(100% - 30px, 1080px);
@@ -37,6 +39,14 @@
     margin-inline: auto;
 
 }
+
+
+
+/* ---------------------------------------------------- */
+
+/* Hero and header                                      */
+
+/* ---------------------------------------------------- */
 
 .hero{
     height: 100vh;
@@ -53,73 +63,7 @@
     display: flex;
 }
 
-/* ---------------------------------------------------- */
 
-/* Header                                               */
-
-/* ---------------------------------------------------- */
-
-
-header {
-    height: 56px;
-    background-color: rgb(255, 60, 87, .6);
-    overflow: hidden;
-    position: fixed;
-    z-index: 1;
-    width: 100%;
-}
-
-/* Title */
-.title {
-    width: 40%;
-    height: 40px;
-}
-
-.title h1 {
-    font-size: 22px;
-    font-weight: 400;
-    line-height: 56px;
-    text-transform: uppercase;
-    letter-spacing: 0.2px;
-}
-
-.title h1 a {
-    text-decoration: none;
-    color: #fff;
-}
-
-/* Navigation */
-nav {
-    width: 60%;
-    text-align: right;
-}
-
-nav ul {
-    list-style: none;
-}
-
-nav ul li{ 
-    display: inline;
-    line-height: 56px;
-    cursor: default;
-}
-
-nav ul li a {
-    font-size: 19px;
-    letter-spacing: 1px;
-    color: #fff;
-    font-weight: 600;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-nav ul li a:hover {
-    text-decoration: underline #add8e6;
-}
-
-nav ul li + li {
-    margin-left: 18px;
-}
 
 /* ---------------------------------------------------- */
 
@@ -149,6 +93,7 @@ nav ul li + li {
 
 .landing-text h2 {
     color: #fff;
+    transition: font-size 0.2s;
 }
 
 /* Button */
@@ -171,32 +116,35 @@ button {
 button:hover{
     background-color: var(--app-blue-hover);
 }
+
 /* ---------------------------------------------------- */
 
 /* Products                                             */
 
 /* ---------------------------------------------------- */
-
-.products{
+.inventory h1{
   padding: 5vh;
+  text-align: center;
+}
+.products{
   box-sizing: border-box;
 }
-
-img {
+img{
   object-fit: fill;
 }
-
 .product-showcase {
   max-width: 1000px;
   position: relative;
   margin: auto;
 }
-
+.products{
+  padding-bottom: 5vh;
+}
 .product { 
   display: none;
 }
-
 .prev, .next {
+  background-color: rgba(0, 0, 0, 0.1);
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -217,12 +165,11 @@ img {
 }
 
 .prev:hover, .next:hover {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-
 .product-desc {
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0,0,0,0.5);
   color: #f2f2f2;
   font-size: 15px;
   padding: 8px 12px;
@@ -265,81 +212,10 @@ img {
   to {opacity: 1}
 }
 
-/* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
 
 
-/* ---------------------------------------------------- */
 
-/* Footer                                               */
 
-/* ---------------------------------------------------- */
-
-footer {
-    height: var(--app-footer-height);
-    background-color: #c9d3dd;
-    align-items: center; 
-}
-
-.footer p {
-    line-height: 40px;
-    color: #1a1d28;
-}
-.footer p:hover {
-    text-decoration: underline;
-}
-
-.footer a {
-    text-decoration: none;
-}
-
-.footer .icon {
-    width: 40px;
-    height: 40px;
-    display: grid;
-    place-items: center;
-    margin: 0px 10px 0px 20px;
-    background-color: #1a1d2818;
-    border: 1px solid #1a1d2827;
-    border-radius: 50%;
-    color: #1a1d28bd;
-}
-.footer .icon:hover {
-    background-color: #1a1d2820;
-}
-
-.footer p {
-    line-height: 40px;
-    color: #1a1d28;
-}
-.footer p:hover {
-    text-decoration: underline;
-}
-
-.footer a {
-    text-decoration: none;
-}
-
-.footer .icon {
-    width: 40px;
-    height: 40px;
-    display: grid;
-    place-items: center;
-    margin: 0px 10px 0px 20px;
-    background-color: #1a1d2818;
-    border: 1px solid #1a1d2827;
-    border-radius: 50%;
-    color: #1a1d28bd;
-    transition: background-color .25s ease-in-out;
-}
-.footer .icon:hover {
-    background-color: #1a1d2820;
-}
-.half {
-    width: 50%;
-}
-.copyright {
-    justify-content: right;
-}
