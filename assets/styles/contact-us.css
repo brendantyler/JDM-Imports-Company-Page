@@ -154,25 +154,48 @@ button:hover{
 
 /* ---------------------------------------------------- */
 
+form {
+    border: 1px solid red;
+}
 
 .form-wrapper {
-    width: 100vh;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    display: flex;
-    margin: 5vh auto;
-    border-radius: 6px;
+    margin: auto;
+    height: 50vh;
 }
 
 input {
     color: rgb(0, 0, 0);
     font-size: 14px;
     font-weight: 400;
-    width: 100%;
-    border: 2px solid var(--input-btn-color);
     transition: all .5s ease-in-out;
     background-color: rgb(254, 240, 240);
     border-radius: 6px;
 }
+
+.form-names {
+    display: flex;
+}
+
+input[type="submit"]{
+    color: rgb(8, 8, 8);
+    font-weight: 600;
+    background-color: var(--input-btn-color);
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: all .4s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(92, 34, 0);
+}
+
+/* ---------------------------------------------------- */
+
+/* footer 
+
+/* ---------------------------------------------------- */
 
 footer {
     height: var(--app-footer-height);
