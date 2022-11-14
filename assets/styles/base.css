@@ -93,35 +93,7 @@ footer {
   line-height: 40px;
   color: #1a1d28;
 }
-.footer p:hover {
-  text-decoration: underline;
-}
-
-.footer a {
-  text-decoration: none;
-}
-
-.footer .icon {
-  width: 40px;
-  height: 40px;
-  display: grid;
-  place-items: center;
-  margin: 0px 10px 0px 20px;
-  background-color: #1a1d2818;
-  border: 1px solid #1a1d2827;
-  border-radius: 50%;
-  color: #1a1d28bd;
-  transition: height 0.25s, width 0.25s;
-}
-.footer .icon:hover {
-  background-color: #1a1d2820;
-}
-
-.footer p {
-  line-height: 40px;
-  color: #1a1d28;
-}
-.footer p:hover {
+.links p:hover {
   text-decoration: underline;
 }
 
@@ -214,5 +186,25 @@ footer {
   }
   .new {
       display: inline-block;
+  }
+  nav ul li a:hover {
+    text-decoration: none;
+  }
+}
+@media (max-width: 385px) {
+  .footer .icon {
+    margin: 0 10px 0 0;
+  }
+  .links {
+    width: 40%;
+  }
+  .copyright {
+    width: 60%;
+  }
+  .title {
+    width: 60%;
+  }
+  nav {
+    width: 40%;
   }
 }
