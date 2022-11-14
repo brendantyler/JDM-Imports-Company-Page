@@ -22,14 +22,16 @@
 
     --app-orange: #ff833c;
 
-    --app-blue: #3c57ff;
+    --app-blue: #3950e2;
 
-    --app-blue-hover: #364ee6;
+    --app-blue-hover: #3549c9;
 
     --app-footer-height: 112px;
 }
 
-
+* {
+    transition: font-size 0.2s;
+}
 .container {
 
     width: min(100% - 30px, 1080px);
@@ -57,18 +59,27 @@
     width: 100%;
 }
 
+.flexbox {
+    display: flex;
+}
+
+/* ---------------------------------------------------- */
+
+/* Header                                               */
+
+/* ---------------------------------------------------- */
+
+
 header {
     height: 56px;
     background-color: rgb(255, 60, 87, .6);
     overflow: hidden;
     position: fixed;
+    z-index: 1;
     width: 100%;
 }
 
-.flexbox {
-    display: flex;
-}
-
+/* Title */
 .title {
     width: 40%;
     height: 40px;
@@ -87,9 +98,20 @@ header {
     color: #fff;
 }
 
+/* Navigation */
 nav {
     width: 60%;
     text-align: right;
+}
+
+.new {
+    display: none;
+    justify-content: right;
+}
+.new ul {
+    justify-content: right;
+    height: 56px;
+    align-items: center;
 }
 
 nav ul {
@@ -119,6 +141,19 @@ nav ul li + li {
     margin-left: 18px;
 }
 
+
+.fanavicon {
+    font-size: 22px;
+    display: flex;
+}
+
+/* ---------------------------------------------------- */
+
+/* Banner                                               */
+
+/* ---------------------------------------------------- */
+
+/* Text and Button */
 .text-and-btn {
     display: flex;
     flex-direction: column;
@@ -128,6 +163,8 @@ nav ul li + li {
     height: 100vh;
     width: 100%;
 }
+
+/* Text */
 .landing-text {
     width: 50%;
     font-size: 18px;
@@ -138,20 +175,24 @@ nav ul li + li {
 
 .landing-text h2 {
     color: #fff;
+    transition: font-size 0.2s;
 }
 
+/* Button */
 button {
     background-color:var(--app-blue);
 	border-radius: 40px;
 	cursor:pointer;
 	color:#ffffff;
 	font-size:15px;
-    padding: 13px 35px;
-    text-align: center;
+    width: 150px;
+    height: 45px;
+    display: grid;
+    place-items: center;
 	text-decoration:none;
-    transition: all .5s ease-in-out;
+    transition: background-color .25s ease-in-out;
 	text-shadow:0px 1px 0px #2f6627;
-    margin-top: 12px;
+    margin-top: 30px;
 }
 
 button:hover{
@@ -163,7 +204,99 @@ button:hover{
 /* Products                                             */
 
 /* ---------------------------------------------------- */
+.inventory h1{
+  padding: 5vh;
+  text-align: center;
+}
+.products{
+  box-sizing: border-box;
+}
+img{
+  object-fit: fill;
+}
+.product-showcase {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.products{
+  padding-bottom: 5vh;
+}
+.product { 
+  display: none;
+}
+.prev, .next {
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
 
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.product-desc {
+  background-color: rgba(0,0,0,0.5);
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.product-tracker {
+  background-color: rgba(0,0,0,0.8);
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
 
 
 /* ---------------------------------------------------- */
@@ -203,4 +336,90 @@ footer {
 }
 .footer .icon:hover {
     background-color: #1a1d2820;
+}
+
+.footer p {
+    line-height: 40px;
+    color: #1a1d28;
+}
+.footer p:hover {
+    text-decoration: underline;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    margin: 0px 10px 0px 20px;
+    background-color: #1a1d2818;
+    border: 1px solid #1a1d2827;
+    border-radius: 50%;
+    color: #1a1d28bd;
+    transition: background-color .25s ease-in-out;
+}
+.icon:hover {
+    background-color: #1a1d2820;
+}
+.links {
+    width: 70%;
+}
+.copyright {
+    justify-content: right;
+    width: 30%;
+}
+
+
+/* ---------------------------------------------------- */
+
+/* Resposive Design                                     */
+
+/* ---------------------------------------------------- */
+
+@media (max-width: 830px) {
+    footer p, footer {
+        font-size: 14px;
+    }
+}
+@media (max-width: 768px) {
+    .landing-text{
+        width: 90%;
+    }
+    .landing-text h2 {
+        font-size: 26px;
+    }
+}
+@media (max-width: 636px) {
+    .landing-text{
+        width: 80%;
+    }
+    .landing-text h2 {
+        font-size: 24px;
+    }
+}
+@media (max-width: 512px) {
+    .title h1 {
+        font-size: 20px;
+    }
+    nav ul li a {
+        font-size: 17px;
+    }
+}
+@media (max-width: 455px) {
+    .landing-text{
+        width: 70%;
+    }
+    .landing-text h2 {
+        font-size: 22px;
+    }
+    .og {
+        display: none;
+    }
+    .new {
+        display: inline-block;
+    }
 }
