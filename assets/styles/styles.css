@@ -14,6 +14,8 @@
 
     --app-dark-bg: #1a1d28;
 
+    --app-light-bg: #f0f2f4;
+
     --app-red: #ff3c57;
 
     --app-green: #33ab4e;
@@ -26,15 +28,28 @@
 
     --app-blue-hover: #364ee6;
 
+    --app-footer-height: 112px;
 }
 
 
 
+body {
 
+    background-color: var(--app-light-bg);
+
+}
 .container {
 
     width: min(100% - 30px, 1080px);
 
     margin-inline: auto;
+
+}
+
+footer {
+
+    height: var(--app-footer-height);
+
+    background-color: #c9d3dd;
 
 }
