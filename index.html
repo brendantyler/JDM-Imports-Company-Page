@@ -13,19 +13,6 @@
         <script src="assets/script/index.js" defer></script>
     </head>
     <body>
-        <header>
-            <div class="container flexbox">
-                <div class="title">
-                    <h1><a href="">Company</a></h1>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a target="_blank" href="about-us">About us</a></li>
-                        <li><a target="_blank" href="contact-us">Contact us</a></li>
-                    </ul>
-                </nav>
-        </header>
-
         <section class="hero">
             <section class="hero-overlay">
                 <header>
@@ -55,21 +42,41 @@
             </section>
         </section>           
         
-        <section>
-              <div class="container flexbox">
-                  <div class="item-showcase">                  
-                      <div class="column one">
-                        <div class="product-tracker"></div>
-                      </div>
-                      <div class="column two">
-                        <div class="product-tracker"></div>
-                      </div>
-                      <div class="column three">
-                        <div class="product-tracker"></div>
+        <section >
+            <div class="products">
+              <div class="container ">
+                  <div class="product-showcase"> 
 
+                      <div class="product fade">
+                        <div class="product-tracker">1 / 3</div>
+                        <img src="assets/img/placeholder.jpg" alt="placeholder">
+                        <div class="product-desc"></div>
                       </div>
-                  </div>              
+                      <div class="product fade">
+                        <div class="product-tracker">2 / 3</div>
+                        <img src="assets/img/placeholder.jpg" alt="placeholder">
+                        <div class="product-desc"></div>
+                      </div>
+
+                      <div class="product fade">
+                        <div class="product-tracker">3 / 3</div>
+                        <img src="assets/img/placeholder.jpg" alt="placeholder">
+                        <div class="product-desc"></div>
+                      </div>
+
+                      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  </div>  
+                  
+                  <br>   
+
+                  <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                  </div>         
               </div>
+            </div>
             </section>
 
         <footer>
