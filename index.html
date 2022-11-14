@@ -42,26 +42,41 @@
             </section>
         </section>
         
-        <section class="products">
-              <div class="container flexbox">
-                  <div class="-showcase">                  
-                      <div class="column one">
-                        <div class="product-tracker"></div>
-                        <img src="" alt="">
-                        <div class="desc"></div>
+        <section >
+            <div class="products">
+              <div class="container ">
+                  <div class="product-showcase"> 
+
+                      <div class="product fade">
+                        <div class="product-tracker">1 / 3</div>
+                        <img src="assets/img/placeholder.jpg" alt="placeholder">
+                        <div class="product-desc"></div>
                       </div>
-                      <div class="column two">
-                        <div class="product-tracker"></div>
-                        <img src="" alt="">
-                        <div class="desc"></div>
+                      <div class="product fade">
+                        <div class="product-tracker">2 / 3</div>
+                        <img src="assets/img/placeholder.jpg" alt="placeholder">
+                        <div class="product-desc"></div>
                       </div>
-                      <div class="column three">
-                        <div class="product-tracker"></div>
-                        <img src="" alt="">
-                        <div class="desc"></div>
+
+                      <div class="product fade">
+                        <div class="product-tracker">3 / 3</div>
+                        <img src="assets/img/placeholder.jpg" alt="placeholder">
+                        <div class="product-desc"></div>
                       </div>
-                  </div>              
+
+                      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  </div>  
+                  
+                  <br>   
+
+                  <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                  </div>         
               </div>
+            </div>
             </section>
         <footer class="flexbox">
             <div class="container footer flexbox">
