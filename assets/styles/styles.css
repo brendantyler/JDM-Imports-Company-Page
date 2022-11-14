@@ -63,7 +63,6 @@
     display: flex;
 }
 
-/* ---------------------------------------------------- */
 
 /* Header                                               */
 
@@ -293,121 +292,5 @@ img{
 }
 
 
-/* ---------------------------------------------------- */
-
-/* Footer                                               */
-
-/* ---------------------------------------------------- */
-
-footer {
-    height: var(--app-footer-height);
-    background-color: #c9d3dd;
-    align-items: center; 
-}
-
-.footer p {
-    line-height: 40px;
-    color: #1a1d28;
-}
-.footer p:hover {
-    text-decoration: underline;
-}
-
-.footer a {
-    text-decoration: none;
-}
-
-.footer .icon {
-    width: 40px;
-    height: 40px;
-    display: grid;
-    place-items: center;
-    margin: 0px 10px 0px 20px;
-    background-color: #1a1d2818;
-    border: 1px solid #1a1d2827;
-    border-radius: 50%;
-    color: #1a1d28bd;
-}
-.footer .icon:hover {
-    background-color: #1a1d2820;
-}
-
-.footer p {
-    line-height: 40px;
-    color: #1a1d28;
-}
-.footer p:hover {
-    text-decoration: underline;
-}
-
-.footer a {
-    text-decoration: none;
-}
-
-.icon {
-    width: 40px;
-    height: 40px;
-    display: grid;
-    place-items: center;
-    margin: 0px 10px 0px 20px;
-    background-color: #1a1d2818;
-    border: 1px solid #1a1d2827;
-    border-radius: 50%;
-    color: #1a1d28bd;
-    transition: background-color .25s ease-in-out;
-}
-.icon:hover {
-    background-color: #1a1d2820;
-}
-.links {
-    width: 70%;
-}
-.copyright {
-    justify-content: right;
-    width: 30%;
-}
 
 
-/* ---------------------------------------------------- */
-
-/* Resposive Design                                     */
-
-/* ---------------------------------------------------- */
-
-@media (max-width: 830px) {
-    footer p, footer {
-        font-size: 14px;
-    }
-}
-@media (max-width: 768px) {
-    .landing-text h2 {
-        font-size: 22px;
-    }
-}
-@media (max-width: 626px) {
-    .landing-text h2 {
-        font-size: 18px;
-    }
-}
-@media (max-width: 512px) {
-    .landing-text h2 {
-        font-size: 16px;
-    }
-    .title h1 {
-        font-size: 20px;
-    }
-    nav ul li a {
-        font-size: 17px;
-    }
-}
-@media (max-width: 455px) {
-    .landing-text h2 {
-        font-size: 14px;
-    }
-    .og {
-        display: none;
-    }
-    .new {
-        display: inline-block;
-    }
-}
