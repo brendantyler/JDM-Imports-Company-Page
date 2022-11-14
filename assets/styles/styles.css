@@ -157,6 +157,13 @@ button {
 button:hover{
     background-color: var(--app-blue-hover);
 }
+/* ---------------------------------------------------- */
+
+/* Products                                             */
+
+/* ---------------------------------------------------- */
+
+
 
 /* ---------------------------------------------------- */
 
@@ -165,9 +172,34 @@ button:hover{
 /* ---------------------------------------------------- */
 
 footer {
-
     height: var(--app-footer-height);
-
     background-color: #c9d3dd;
+    align-items: center; 
+}
 
+.footer p {
+    line-height: 40px;
+    color: #1a1d28;
+}
+.footer p:hover {
+    text-decoration: underline;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer .icon {
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    margin: 0px 10px 0px 20px;
+    background-color: #1a1d2818;
+    border: 1px solid #1a1d2827;
+    border-radius: 50%;
+    color: #1a1d28bd;
+}
+.footer .icon:hover {
+    background-color: #1a1d2820;
 }
