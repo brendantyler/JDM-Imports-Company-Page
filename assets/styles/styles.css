@@ -38,6 +38,14 @@
 
 }
 
+
+
+/* ---------------------------------------------------- */
+
+/* Hero and header                                      */
+
+/* ---------------------------------------------------- */
+
 .hero{
     height: 100vh;
     background: rgb(255, 0, 0)url(../img/Hero-image.jpg) center center / cover ;
@@ -49,6 +57,7 @@
     width: 100%;
 }
 
+<<<<<<< HEAD
 .flexbox {
     display: flex;
 }
@@ -60,6 +69,8 @@
 /* ---------------------------------------------------- */
 
 
+=======
+>>>>>>> 813c3136dd391b7ebdb7a07412c9279e79732d0e
 header {
     height: 56px;
     background-color: rgb(255, 60, 87, .6);
@@ -171,6 +182,7 @@ button {
 button:hover{
     background-color: var(--app-blue-hover);
 }
+
 /* ---------------------------------------------------- */
 
 /* Products                                             */
