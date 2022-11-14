@@ -51,11 +51,19 @@ function select(selector, parent = document) {
    console.log(content);
  }
 
- const inventoryBtn = select('.inventory-btn')
+const inventoryBtn = select('.inventory-btn')
+const aboutBtn = select('.about-btn')
+
 
  onEvent('click', inventoryBtn, function() {
-  const aboutPage = select('.inventory');
+  const inventory = select('.inventory');
+  inventory.scrollIntoView({ block: 'end',  behavior: 'smooth' });
+});
+
+onEvent('click', aboutBtn, function() {
+  const aboutPage = select('.about');
   aboutPage.scrollIntoView({ block: 'end',  behavior: 'smooth' });
 });
+
 
 
