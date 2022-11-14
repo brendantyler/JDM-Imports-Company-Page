@@ -154,6 +154,23 @@ button:hover{
 
 /* ---------------------------------------------------- */
 
+.form-bg{
+
+}
+
+figure {
+    width: 100vh;
+    display: flex;
+    margin: 30px auto;
+}
+
+figure p {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+}
+
 .form-wrapper {
     width: 60vh;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
