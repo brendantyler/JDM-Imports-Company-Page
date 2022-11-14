@@ -29,7 +29,9 @@
     --app-footer-height: 112px;
 }
 
-
+* {
+    transition: font-size 0.2s;
+}
 .container {
 
     width: min(100% - 30px, 1080px);
@@ -102,6 +104,16 @@ nav {
     text-align: right;
 }
 
+.new {
+    display: none;
+    justify-content: right;
+}
+.new ul {
+    justify-content: right;
+    height: 56px;
+    align-items: center;
+}
+
 nav ul {
     list-style: none;
 }
@@ -157,6 +169,7 @@ nav ul li + li {
 
 .landing-text h2 {
     color: #fff;
+    transition: font-size 0.2s;
 }
 
 /* Button */
@@ -275,7 +288,6 @@ img{
   to {opacity: 1}
 }
 
-/* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
@@ -332,7 +344,7 @@ footer {
     text-decoration: none;
 }
 
-.footer .icon {
+.icon {
     width: 40px;
     height: 40px;
     display: grid;
@@ -344,12 +356,58 @@ footer {
     color: #1a1d28bd;
     transition: background-color .25s ease-in-out;
 }
-.footer .icon:hover {
+.icon:hover {
     background-color: #1a1d2820;
 }
-.half {
-    width: 50%;
+.links {
+    width: 70%;
 }
 .copyright {
     justify-content: right;
+    width: 30%;
+}
+
+
+/* ---------------------------------------------------- */
+
+/* Resposive Design                                     */
+
+/* ---------------------------------------------------- */
+
+@media (max-width: 830px) {
+    footer p, footer {
+        font-size: 14px;
+    }
+}
+@media (max-width: 768px) {
+    .landing-text h2 {
+        font-size: 22px;
+    }
+}
+@media (max-width: 626px) {
+    .landing-text h2 {
+        font-size: 18px;
+    }
+}
+@media (max-width: 512px) {
+    .landing-text h2 {
+        font-size: 16px;
+    }
+    .title h1 {
+        font-size: 20px;
+    }
+    nav ul li a {
+        font-size: 17px;
+    }
+}
+@media (max-width: 455px) {
+    .landing-text h2 {
+        font-size: 14px;
+    }
+    .og {
+        display: none;
+    }
+    .new {
+        display: inline-block;
+    }
 }
