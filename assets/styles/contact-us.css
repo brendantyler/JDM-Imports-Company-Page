@@ -45,59 +45,10 @@
 
 /* ---------------------------------------------------- */
 
-.form-wrapper {
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    border-radius: 6px;
-    height: 100vh;
-}
+    
+/* ---------------------------------------------------- */
 
-.form {
-    display: flex;
-    flex-direction: column;
-    width: 50vh;
-}
+/* Form                                    */
 
-.form-names {
-    display: flex;
-}
+/* ---------------------------------------------------- */
 
-input, .msg {
-    color: rgb(0, 0, 0);
-    font-size: 14px;
-    font-weight: 400;
-    width: 100%;
-    border: 2px solid var(--app-blue);
-    transition: all .5s ease-in-out;
-    background-color: rgb(254, 240, 240);
-    border-radius: 6px;
-    padding: 5px;
-}
-
-input:hover {
-    box-shadow: 0 .5px 0 0 var(--app-blue-hover);
-}
-
-
-input[type="submit"]{
-    color: #fff;
-    font-weight: 600;
-    background-color: var(--input-btn-color);
-    width: 80px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 15px;
-    transition: all .4s ease-in-out;
-}
-
-input[type="submit"]:hover {
-    background-color: rgb(92, 34, 0);
-}
-
-
-.copyright {
-    color: rgb(0, 0, 0);
-}
