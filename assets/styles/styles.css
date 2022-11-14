@@ -176,27 +176,29 @@ button:hover{
 /* Products                                             */
 
 /* ---------------------------------------------------- */
-
-.products{
+.inventory h1{
   padding: 5vh;
+  text-align: center;
+}
+.products{
   box-sizing: border-box;
 }
-
-img {
+img{
   object-fit: fill;
 }
-
 .product-showcase {
   max-width: 1000px;
   position: relative;
   margin: auto;
 }
-
+.products{
+  padding-bottom: 5vh;
+}
 .product { 
   display: none;
 }
-
 .prev, .next {
+  background-color: rgba(0, 0, 0, 0.1);
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -217,12 +219,11 @@ img {
 }
 
 .prev:hover, .next:hover {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-
 .product-desc {
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0,0,0,0.5);
   color: #f2f2f2;
   font-size: 15px;
   padding: 8px 12px;
