@@ -25,3 +25,45 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+'use strict';
+
+// Utility Functions
+function onEvent(event, selector, callback) {
+    return selector.addEventListener(event, callback);
+ }
+    
+
+function select(selector, parent = document) {
+    return parent.querySelector(selector);
+ }
+
+ function selectAll(selector, parent = document) {
+    return parent.querySelectorAll(selector);
+ }
+
+
+ function create(element, parent = document) {
+   return parent.createElement(element);
+ }
+
+ function log(content) {
+   console.log(content);
+ }
+
+const inventoryBtn = select('.inventory-btn')
+const aboutBtn = select('.about-btn')
+
+
+ onEvent('click', inventoryBtn, function() {
+  const inventory = select('.inventory');
+  inventory.scrollIntoView({ block: 'end',  behavior: 'smooth' });
+});
+
+onEvent('click', aboutBtn, function() {
+  const aboutPage = select('.about');
+  aboutPage.scrollIntoView({ block: 'end',  behavior: 'smooth' });
+});
+
+
+

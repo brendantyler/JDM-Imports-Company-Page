@@ -133,11 +133,17 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    text-decoration: underline #add8e6;
+    text-decoration: underline var(--app-red);
 }
 
 nav ul li + li {
     margin-left: 18px;
+}
+
+
+.fanavicon {
+    font-size: 22px;
+    display: flex;
 }
 
 /* ---------------------------------------------------- */
@@ -197,6 +203,7 @@ button:hover{
 /* Products                                             */
 
 /* ---------------------------------------------------- */
+
 .inventory h1{
   padding: 5vh;
   text-align: center;
@@ -294,3 +301,62 @@ img{
 
 
 
+/* ---------------------------------------------------- */
+
+/* Resposive Design                                     */
+
+/* ---------------------------------------------------- */
+
+@media (max-width: 830px) {
+    footer p, footer {
+        font-size: 14px;
+    }
+}
+@media (max-width: 768px) {
+    .landing-text{
+        width: 90%;
+    }
+    .landing-text h2 {
+        font-size: 26px;
+    }
+}
+@media (max-width: 636px) {
+    .landing-text{
+        width: 80%;
+    }
+    .landing-text h2 {
+        font-size: 24px;
+    }
+}
+@media (max-width: 512px) {
+    .title h1 {
+        font-size: 20px;
+    }
+    nav ul li a {
+        font-size: 17px;
+    }
+}
+@media (max-width: 455px) {
+    .landing-text{
+        width: 70%;
+    }
+    .landing-text h2 {
+        font-size: 22px;
+    }
+    .og {
+        display: none;
+    }
+    .new {
+        display: inline-block;
+    }
+}
+
+@media (max-width: 380px) {
+    .title {
+        width: 50%;
+    }
+
+    nav {
+        width: 50%;
+    }
+}
