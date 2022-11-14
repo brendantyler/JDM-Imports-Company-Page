@@ -194,6 +194,54 @@ button:hover{
 
 /* ---------------------------------------------------- */
 
+/* About                                                */
+
+/* ---------------------------------------------------- */
+.about {
+  flex-grow: 1;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+.about-row  {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+}
+
+.about-field {
+  flex-grow: 1;
+  text-align: center;
+  width: calc(25%);
+  height: 200px;
+  border-radius: 6px;
+  box-shadow: 1px 1px 2px 0 rgb(0 0 0 / 0.1);
+}
+
+@media (max-width: 768px) {
+  .one .two {
+      width: calc(50% - 10px);
+  }
+
+  .three {
+      width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-field {
+      width: 100%;
+  }
+
+  .three {
+      width: 100%;
+  }
+}
+
+
+
+
+/* ---------------------------------------------------- */
+
 /* Products                                             */
 
 /* ---------------------------------------------------- */
