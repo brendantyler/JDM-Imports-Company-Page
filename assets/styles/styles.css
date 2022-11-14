@@ -178,7 +178,7 @@ nav ul li + li {
 }
 
 /* Button */
-button {
+.about-btn {
     background-color:var(--app-blue);
 	border-radius: 40px;
 	cursor:pointer;
@@ -194,7 +194,7 @@ button {
     margin-top: 30px;
 }
 
-button:hover{
+.about-btn:hover{
     background-color: var(--app-blue-hover);
 }
 
