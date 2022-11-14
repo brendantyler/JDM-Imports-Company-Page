@@ -117,24 +117,16 @@ nav ul li + li {
     margin-left: 18px;
 }
 
-.text-and-btn {
+.text-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     transition: all .3s ease-in-out;
-    height: 50vh;
-    width: 100%;
-}
-.landing-text {
-    width: 50%;
-    font-size: 18px;
-    text-align: center;
-    font-weight: 400;
-    color: #fff;
+    height: 80vh;
 }
 
-.landing-text h2 {
+.text-wrapper h2 {
+    font-size: 6rem;
     color: #fff;
 }
 
@@ -162,8 +154,24 @@ button:hover{
 
 /* ---------------------------------------------------- */
 
-form{
-    height: 100vh;
+
+.form-wrapper {
+    width: 100vh;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    margin: 5vh auto;
+    border-radius: 6px;
+}
+
+input {
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight: 400;
+    width: 100%;
+    border: 2px solid var(--input-btn-color);
+    transition: all .5s ease-in-out;
+    background-color: rgb(254, 240, 240);
+    border-radius: 6px;
 }
 
 footer {
