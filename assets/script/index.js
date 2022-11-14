@@ -25,3 +25,37 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+'use strict';
+
+// Utility Functions
+function onEvent(event, selector, callback) {
+    return selector.addEventListener(event, callback);
+ }
+    
+
+function select(selector, parent = document) {
+    return parent.querySelector(selector);
+ }
+
+ function selectAll(selector, parent = document) {
+    return parent.querySelectorAll(selector);
+ }
+
+
+ function create(element, parent = document) {
+   return parent.createElement(element);
+ }
+
+ function log(content) {
+   console.log(content);
+ }
+
+ const inventoryBtn = select('.inventory-btn')
+
+ onEvent('click', inventoryBtn, function() {
+  const aboutPage = select('.inventory');
+  aboutPage.scrollIntoView({ block: 'end',  behavior: 'smooth' });
+});
+
+
