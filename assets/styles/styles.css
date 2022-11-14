@@ -65,6 +65,7 @@ header {
     background-color: rgb(255, 60, 87, .6);
     overflow: hidden;
     position: fixed;
+    z-index: 1;
     width: 100%;
 }
 
@@ -176,6 +177,91 @@ button:hover{
 
 /* ---------------------------------------------------- */
 
+.products{
+  box-sizing: border-box;
+}
+
+.product-showcase {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.product { 
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
 
 
 /* ---------------------------------------------------- */
@@ -188,6 +274,33 @@ footer {
     height: var(--app-footer-height);
     background-color: #c9d3dd;
     align-items: center; 
+}
+
+.footer p {
+    line-height: 40px;
+    color: #1a1d28;
+}
+.footer p:hover {
+    text-decoration: underline;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer .icon {
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    margin: 0px 10px 0px 20px;
+    background-color: #1a1d2818;
+    border: 1px solid #1a1d2827;
+    border-radius: 50%;
+    color: #1a1d28bd;
+}
+.footer .icon:hover {
+    background-color: #1a1d2820;
 }
 
 .footer p {
