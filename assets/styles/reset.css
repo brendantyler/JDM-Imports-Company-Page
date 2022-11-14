@@ -38,10 +38,6 @@ html {
    -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-  background: var(--app-dark-bg);
-  height: 100%;
-}
 
 ul, ol {
   list-style: none;
