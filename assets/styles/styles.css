@@ -61,4 +61,63 @@ footer {
 
 }
 
+header {
+    height: 56px;
+    background-color: var(--app-dark-bg);
+    overflow: hidden;
+}
 
+.flexbox {
+    display: flex;
+}
+
+.title {
+    width: 40%;
+    height: 40px;
+}
+
+.title h1 {
+    font-size: 22px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 56px;
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+}
+
+.title h1 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav {
+    width: 60%;
+    text-align: right;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li{ 
+    display: inline;
+    line-height: 56px;
+    cursor: default;
+}
+
+nav ul li a {
+    font-size: 19px;
+    letter-spacing: 1px;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+nav ul li a:hover {
+    text-decoration: underline #add8e6;
+}
+
+nav ul li + li {
+    margin-left: 18px;
+}
