@@ -46,7 +46,7 @@
 /* ---------------------------------------------------- */
 .hero{
     height: 50vh;
-    background: rgb(255, 0, 0)url(../img/Hero-image.jpg) center center / cover ;
+    background: rgb(255, 0, 0)url(../img/form-hero.avif) center center / cover ;
 }
 
 .hero-overlay {
@@ -153,48 +153,55 @@ button:hover{
 /* Form                                    */
 
 /* ---------------------------------------------------- */
+
 .form-wrapper {
     width: 60vh;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     margin: 20px auto;
     border-radius: 6px;
-    height: 100vh;
 }
 
 .form-input {
     display: flex;
-    padding: 20px;
-  }
+    padding: 10px 20px;
+}
+
 .form {
     display: flex;
     flex-direction: column;
     width: 80vh;
 }
 
+h3 {
+    font-size: 3rem;
+    text-align: center;
+}
+
 input, textarea {
     color: rgb(0, 0, 0);
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 400;
-    padding: 5px;
+    padding: 10px;
     width: 100%;
     transition: all .5s ease-in-out;
     background-color: rgb(254, 240, 240);
     border-radius: 6px;
 }
 
+.submit-btn {
+    padding: 20px;
+}
 
 input[type="submit"]{
     color: #fff;
     font-weight: 600;
     background-color: var(--app-blue);
-    width: 80px;
     border-radius: 4px;
     cursor: pointer;
     font-size: 15px;
     transition: all .4s ease-in-out;
+    display: inline;
 }
 
 input[type="submit"]:hover {
