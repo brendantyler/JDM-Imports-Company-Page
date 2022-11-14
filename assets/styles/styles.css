@@ -134,7 +134,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    text-decoration: underline #add8e6;
+    text-decoration: underline var(--app-red);
 }
 
 nav ul li + li {
