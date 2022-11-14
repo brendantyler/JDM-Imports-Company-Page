@@ -178,7 +178,12 @@ button:hover{
 /* ---------------------------------------------------- */
 
 .products{
+  padding: 5vh;
   box-sizing: border-box;
+}
+
+img {
+  object-fit: fill;
 }
 
 .product-showcase {
@@ -212,11 +217,12 @@ button:hover{
 }
 
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 
-.text {
+.product-desc {
+  background-color: rgba(0,0,0,0.6);
   color: #f2f2f2;
   font-size: 15px;
   padding: 8px 12px;
@@ -226,7 +232,8 @@ button:hover{
   text-align: center;
 }
 
-.numbertext {
+.product-tracker {
+  background-color: rgba(0,0,0,0.8);
   color: #f2f2f2;
   font-size: 12px;
   padding: 8px 12px;
