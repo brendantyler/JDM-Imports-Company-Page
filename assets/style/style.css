@@ -1,0 +1,94 @@
+@import "./reset.css";
+
+/* ---------------------------------------------------- */
+/*                                                      */
+/* ---------------------------------------------------- */
+
+
+
+:root {
+
+    --app-dark-bg: #1a1d28;
+
+    --app-red: #ff3c57;
+
+    --app-green: #33ab4e;
+
+    --app-purple: #833cff;
+
+    --app-orange: #ff833c;
+
+    --app-blue: #3c57ff;
+
+    --app-blue-hover: #364ee6;
+
+}
+
+.container {
+    width: min(100% - 30px, 1080px);
+    margin-inline: auto;
+}
+
+/* ---------------------------------------------------- */
+/* Header                                               */
+/* ---------------------------------------------------- */
+
+header {
+    height: 56px;
+    overflow: hidden;
+}
+
+.flexbox {
+    display: flex;
+}
+
+.title {
+    width: 40%;
+    height: 40px;
+}
+
+.title h1 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 56px;
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+}
+
+.title h1 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav {
+    width: 60%;
+    text-align: right;
+    position: sticky;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li{ 
+    display: inline;
+    line-height: 56px;
+    cursor: default;
+}
+
+nav ul li a {
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+nav ul li a:hover {
+    text-decoration: underline #add8e6;
+}
+
+nav ul li + li {
+    margin-left: 18px;
+}
