@@ -29,6 +29,11 @@ function showSlides(n) {
 'use strict';
 
 // Utility Functions
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - */
+/* General - Index                                 */
+/* - - - - - - - - - - - - - - - - - - - - - - - - */
+
 function onEvent(event, selector, callback) {
     return selector.addEventListener(event, callback);
  }
