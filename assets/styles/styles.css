@@ -207,7 +207,7 @@ nav ul li + li {
 .about {
     flex-grow: 1;
     margin-top: 10vh;
-    margin-bottom: 10vh;
+    margin-bottom: 5vh;
 }
 .about-row  {
     display: flex;
@@ -219,9 +219,9 @@ nav ul li + li {
     flex-grow: 1;
     text-align: center;
     width: calc(25%);
-    height: 200px;
+    height: 300px;
     border-radius: 6px;
-    box-shadow: 1px 1px 2px 0 rgb(0 0 0 / 0.1);
+    box-shadow: 1px 1px 2px 0 rgb(0 0 0 / 0.2);
 }
 
 .about-field h2 {
@@ -229,8 +229,20 @@ nav ul li + li {
 }
 
 .about-field h3 {
+  
     font-size: 20px;
     font-weight: 400;
+}
+
+.about-title {
+  padding-top: 3vh;
+  margin: 1vh;
+}
+
+.about-text {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .support{
@@ -257,30 +269,36 @@ nav ul li + li {
     background-color: #f20c2b;
 }
 
-
-
 h2, h3 span {
     text-decoration: underline var(--app-red);
     font-weight: 600;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1110px) {
+  .about-field {
+    height: 350px;
+  }
+}
+
+@media (max-width: 860px) {
   .one .two {
       width: calc(50% - 10px);
     }
 
   .three {
       width: 100%;
+      height: 250px;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 630px) {
   .about-field {
       width: 100%;
   }
 
-  .three {
+  .about-field {
       width: 100%;
+      height: 300px;
   }
 }
 
@@ -387,9 +405,6 @@ img{
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
-
-
-
 
 /* ---------------------------------------------------- */
 
