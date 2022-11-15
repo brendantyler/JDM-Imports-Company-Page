@@ -233,7 +233,9 @@ input[type="text"], textarea {
     display: grid;
     justify-content: right;
     padding: 0 20px;
+    margin-top: 25px;
 }
+
 
 input[type="submit"]{
     color: #fff;
@@ -301,6 +303,13 @@ footer p, footer {
 }
 
 @media (max-width: 768px) {
+figure {
+    width: 90%;
+}
+
+figure p {
+    font-size: 20px;
+}
 .landing-text{
     width: 90%;
 }
@@ -308,6 +317,13 @@ footer p, footer {
 
 
 @media (max-width: 647px) {
+figure{
+    width: 80%;
+}
+
+figure p {
+    font-size: 18px;
+}
 .form-wrapper{
     width: 90%;
 }
@@ -366,7 +382,16 @@ figure p {
 }
 
 @media (max-width: 400px) {
+    .text-wrapper {
+        width: 100%;
+    }
+    .text-wrapper h2 {
+        font-size: 3.5rem;
+    }
+    figure{
+        width: 90%;
+    }
     figure p {
-        font-size: 16px;
+        font-size: 14px;
     }
 }
