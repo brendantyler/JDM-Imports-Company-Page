@@ -1,5 +1,5 @@
 @import "./reset.css";
-
+@import "./base.css";
 
 
 /* ---------------------------------------------------- */
@@ -8,37 +8,7 @@
 
 /* ---------------------------------------------------- */
 
-:root {
 
-    --app-dark-bg: #1a1d28;
-
-    --app-light-bg: #f0f2f4;
-
-    --app-red: #ff3c57;
-
-    --app-green: #33ab4e;
-
-    --app-purple: #833cff;
-
-    --app-orange: #ff833c;
-
-    --app-blue: #3950e2;
-
-    --app-blue-hover: #3549c9;
-
-    --app-footer-height: 112px;
-}
-
-* {
-    transition: font-size 0.2s;
-}
-.container {
-
-    width: min(100% - 30px, 1080px);
-
-    margin-inline: auto;
-
-}
 
 
 
@@ -59,9 +29,7 @@
     width: 100%;
 }
 
-.flexbox {
-    display: flex;
-}
+
 
 
 /* Header                                               */
