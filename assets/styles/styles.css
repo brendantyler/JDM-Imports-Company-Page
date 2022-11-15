@@ -178,7 +178,7 @@ nav ul li + li {
 }
 
 /* Button */
-button {
+.about-btn {
     background-color:var(--app-blue);
 	border-radius: 40px;
 	cursor:pointer;
@@ -194,9 +194,10 @@ button {
     margin-top: 30px;
 }
 
-button:hover{
+.about-btn:hover{
     background-color: var(--app-blue-hover);
 }
+
 
 /* ---------------------------------------------------- */
 
@@ -204,42 +205,100 @@ button:hover{
 
 /* ---------------------------------------------------- */
 .about {
-  flex-grow: 1;
-  margin-top: 10vh;
-  margin-bottom: 10vh;
+    flex-grow: 1;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
 }
 .about-row  {
-  display: flex;
-  flex-flow: row wrap;
-  gap: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
 }
 
 .about-field {
-  flex-grow: 1;
-  text-align: center;
-  width: calc(25%);
-  height: 200px;
-  border-radius: 6px;
-  box-shadow: 1px 1px 2px 0 rgb(0 0 0 / 0.1);
+    flex-grow: 1;
+    text-align: center;
+    width: calc(25%);
+    height: 300px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 2px 0 rgb(0 0 0 / 0.2);
 }
 
-@media (max-width: 768px) {
+.about-field h2 {
+    font-size: 28px;
+}
+
+.about-field h3 {
+  
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.about-title {
+  padding-top: 3vh;
+  margin: 1vh;
+}
+
+.about-text {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.support{
+    margin-top: 15px;
+}
+
+.support a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.support-btn {
+    border-radius: 40px;
+    cursor:pointer;
+    color:#ffffff;
+    padding: 10px 20px;
+    font-size: 15px;
+    transition: background-color .25s ease-in-out;
+    text-shadow:0px 1px 0px #2f6627;
+    background-color: var(--app-red);
+}
+
+.support-btn:hover{
+    background-color: #f20c2b;
+}
+
+h2, h3 span {
+    text-decoration: underline var(--app-red);
+    font-weight: 600;
+}
+
+@media (max-width: 1110px) {
+  .about-field {
+    height: 350px;
+  }
+}
+
+@media (max-width: 860px) {
   .one .two {
       width: calc(50% - 10px);
-  }
+    }
 
   .three {
       width: 100%;
+      height: 250px;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 630px) {
   .about-field {
       width: 100%;
   }
 
-  .three {
+  .about-field {
       width: 100%;
+      height: 300px;
   }
 }
 
@@ -255,6 +314,7 @@ button:hover{
 .inventory h1{
   padding: 5vh;
   text-align: center;
+  font-size: 32px;
 }
 .products{
   box-sizing: border-box;
@@ -345,9 +405,6 @@ img{
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
-
-
-
 
 /* ---------------------------------------------------- */
 
