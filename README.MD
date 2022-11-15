@@ -1,6 +1,7 @@
 ## JDM IMPORTS COMPANY PAGE
 
-A collaborative project of a mock up company page. 
+A collaborative project of a mock up company page.
+
 Made by: [Seth Vandenbos](https://github.com/daBoss02), [Enjae Antonio](https://github.com/EnjaeAntonio) and [Brendan Galman](https://github.com/brendantyler).
 ### Demo
 
