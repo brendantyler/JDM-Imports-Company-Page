@@ -36,6 +36,10 @@
   display: flex;
 }
 
+body {
+  background-color: var(--app-light-bg);
+}
+
 /* ---------------------------------------------------- */
 
 /* Header                                               */

@@ -1,9 +1,7 @@
 @import "./reset.css";
 @import "./base.css";
 
-body {
-    background-color: #f0f2f4;
-}
+
 
 
 /* ---------------------------------------------------- */
@@ -180,7 +178,6 @@ article p {
 
 .form-wrapper {
     width: 70vh;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     display: flex;
     margin: 40px auto;
 }
@@ -194,7 +191,6 @@ article p {
     display: flex;
     flex-direction: column;
     width: 80vh;
-    background-color: #f0f2f4;
 }
 
 h3 {
@@ -211,6 +207,7 @@ input[type="text"], input[type='email'], textarea {
     width: 100%;
     transition: all .5s ease-in-out;
     border-radius: 6px;
+    box-shadow: 1px 1px 2px 0 rgb(0 0 0 / 0.2);
 }
 
 .submit-btn {
@@ -373,7 +370,7 @@ article p {
         width: 100%;
     }
     .text-wrapper h2 {
-        font-size: 13px;
+        font-size: 2rem;
     }
     article{
         width: 90%;
@@ -382,3 +379,20 @@ article p {
         font-size: 14px;
     }
 }
+@media (max-width: 385px) {
+    .footer .icon {
+      margin: 0 10px 0 0;
+    }
+    .links {
+      width: 40%;
+    }
+    .copyright {
+      width: 60%;
+    }
+    .title {
+      width: 60%;
+    }
+    nav {
+      width: 40%;
+    }
+  }
