@@ -334,7 +334,7 @@ nav ul li a {
 }
 }
 
-@media (max-width: 465px) {
+@media (max-width: 480px) {
 
 .title {
     width: 60%;
@@ -349,7 +349,7 @@ nav {
 }
 
 article p {
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .landing-text{
@@ -367,21 +367,16 @@ article p {
 }
 
 @media (max-width: 400px) {
-<<<<<<< HEAD
-    article p {
-        font-size: 16px;
-=======
     .text-wrapper {
         width: 100%;
     }
     .text-wrapper h2 {
-        font-size: 3.5rem;
+        font-size: 13px;
     }
-    figure{
+    article{
         width: 90%;
     }
-    figure p {
+    article p {
         font-size: 14px;
->>>>>>> EnjaeAntonio-hero
     }
 }
