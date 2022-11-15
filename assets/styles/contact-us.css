@@ -367,10 +367,6 @@ article p {
 }
 
 @media (max-width: 400px) {
-<<<<<<< HEAD
-    article p {
-        font-size: 16px;
-=======
     .text-wrapper {
         width: 100%;
     }
@@ -382,6 +378,5 @@ article p {
     }
     figure p {
         font-size: 14px;
->>>>>>> EnjaeAntonio-hero
     }
 }
