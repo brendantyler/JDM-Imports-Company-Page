@@ -1,5 +1,8 @@
 @import "./reset.css";
 
+body {
+    background-color: #f0f2f4;
+}
 
 
 /* ---------------------------------------------------- */
@@ -26,6 +29,8 @@
 
     --app-blue-hover: #364ee6;
 
+    --app-footer-height: 112px;
+
 }
 
 
@@ -37,4 +42,331 @@
 
     margin-inline: auto;
 
+}
+
+.flexbox {
+    display: flex;
+}
+
+/* ---------------------------------------------------- */
+
+/* Hero and header                                      */
+
+/* ---------------------------------------------------- */
+.hero{
+    height: 50vh;
+    background: rgb(255, 0, 0)url(../img/form-hero.avif) center center / cover ;
+}
+
+.hero-overlay {
+    height: 50vh;
+    background: rgb(20 24 28 / .75);
+    width: 100%;
+}
+
+header {
+    height: 56px;
+    background-color: rgb(255, 60, 87, .6);
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+}
+
+.flexbox {
+    display: flex;
+}
+
+.title {
+    width: 40%;
+    height: 40px;
+}
+
+.title h1 {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 56px;
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+}
+
+.title h1 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav {
+    width: 60%;
+    text-align: right;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li{ 
+    display: inline;
+    line-height: 56px;
+    cursor: default;
+}
+
+nav ul li a {
+    font-size: 19px;
+    letter-spacing: 1px;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+nav ul li a:hover {
+    text-decoration: underline #add8e6;
+}
+
+nav ul li + li {
+    margin-left: 18px;
+}
+
+.new {
+    display: none;
+    justify-content: right;
+}
+.new ul {
+    justify-content: right;
+    height: 56px;
+    align-items: center;
+}
+
+
+.text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease-in-out;
+    height: 60vh;
+}
+
+.text-wrapper h2 {
+    font-size: 6rem;
+    color: #fff;
+}
+
+span {
+    text-decoration: underline var(--app-red);
+}
+
+button {
+    background-color:var(--app-blue);
+	border-radius: 40px;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:15px;
+    padding: 13px 35px;
+    text-align: center;
+	text-decoration:none;
+    transition: all .5s ease-in-out;
+    margin-top: 12px;
+}
+
+button:hover{
+    background-color: var(--app-blue-hover);
+}
+
+/* ---------------------------------------------------- */
+
+/* Form                                    */
+
+/* ---------------------------------------------------- */
+
+
+figure {
+    width: 60%;
+    display: flex;
+    margin: 20px auto;
+}
+
+figure p {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+}
+
+.form-wrapper {
+    width: 70vh;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    margin: 40px auto;
+    border-radius: 6px;
+}
+
+.form-input {
+    display: flex;
+    padding: 10px 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 80vh;
+    background-color: #f0f2f4;
+}
+
+h3 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 10px 0 25px 0;
+}
+
+input[type="text"], textarea {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 400;
+    padding: 12px;
+    width: 100%;
+    transition: all .5s ease-in-out;
+    border-radius: 6px;
+}
+
+.submit-btn {
+    width: 100%;
+    display: grid;
+    justify-content: right;
+    padding: 0 20px;
+}
+
+input[type="submit"]{
+    color: #fff;
+    background-color: var(--app-blue);
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+    margin-bottom: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--app-blue-hover);
+}
+
+p {
+    text-align: center;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+/* ---------------------------------------------------- */
+
+/* footer 
+
+/* ---------------------------------------------------- */
+
+footer {
+    height: var(--app-footer-height);
+    background-color: #c9d3dd;
+    align-items: center; 
+}
+
+.footer p {
+    line-height: 40px;
+    color: #1a1d28;
+}
+.footer p:hover {
+    text-decoration: underline;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer .icon {
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    margin: 0px 10px 0px 20px;
+    background-color: #1a1d2818;
+    border: 1px solid #1a1d2827;
+    border-radius: 50%;
+    color: #1a1d28bd;
+}
+.footer .icon:hover {
+    background-color: #1a1d2820;
+}
+footer p, footer {
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+.landing-text{
+    width: 90%;
+}
+}
+
+
+@media (max-width: 647px) {
+.form-wrapper{
+    width: 90%;
+}
+.landing-text{
+    width: 80%;
+}
+}
+
+@media (max-width: 600px) {
+    .text-wrapper h2 {
+        font-size: 5rem;
+    }
+}
+
+@media (max-width: 535px) {
+
+figure p {
+    font-size: 20px;
+}
+
+nav ul li a {
+    font-size: 17px;
+}
+}
+
+@media (max-width: 465px) {
+
+.title {
+    width: 60%;
+}
+
+nav {
+    width: 40%;
+}
+
+.form-wrapper{
+    width: 80%;
+}
+
+figure p {
+    font-size: 16px;
+}
+
+.landing-text{
+    width: 70%;
+}
+.text-wrapper h2 {
+    font-size: 4rem;
+}
+.og {
+    display: none;
+}
+.new {
+    display: inline-block;
+}
+}
+
+@media (max-width: 400px) {
+    figure p {
+        font-size: 16px;
+    }
 }

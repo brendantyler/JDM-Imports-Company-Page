@@ -1,0 +1,210 @@
+@import "./reset.css";
+/* ---------------------------------------------------- */
+
+/* Header                                               */
+
+/* ---------------------------------------------------- */
+
+
+header {
+  height: 56px;
+  background-color: rgb(255, 60, 87, .6);
+  overflow: hidden;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+
+/* Title */
+.title {
+  width: 40%;
+  height: 40px;
+}
+
+.title h1 {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 56px;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+}
+
+.title h1 a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Navigation */
+nav {
+  width: 60%;
+  text-align: right;
+}
+
+.new {
+  display: none;
+  justify-content: right;
+}
+.new ul {
+  justify-content: right;
+  height: 56px;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li{ 
+  display: inline;
+  line-height: 56px;
+  cursor: default;
+}
+
+nav ul li a {
+  font-size: 19px;
+  letter-spacing: 1px;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+nav ul li a:hover {
+  text-decoration: underline #add8e6;
+}
+
+nav ul li + li {
+  margin-left: 18px;
+}
+
+/* ---------------------------------------------------- */
+
+/* Footer                                               */
+
+/* ---------------------------------------------------- */
+
+footer {
+  height: var(--app-footer-height);
+  background-color: #c9d3dd;
+  align-items: center; 
+}
+
+.footer p {
+  line-height: 40px;
+  color: #1a1d28;
+}
+.links p:hover {
+  text-decoration: underline;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  margin: 0px 10px 0px 20px;
+  background-color: #1a1d2818;
+  border: 1px solid #1a1d2827;
+  border-radius: 50%;
+  color: #1a1d28bd;
+  transition: background-color .25s ease-in-out;
+}
+.icon:hover {
+  background-color: #1a1d2820;
+}
+.links {
+  width: 70%;
+}
+.copyright {
+  justify-content: right;
+  width: 30%;
+}
+
+
+/* ---------------------------------------------------- */
+
+/* Resposive Design                                     */
+
+/* ---------------------------------------------------- */
+
+@media (max-width: 830px) {
+  footer p, footer {
+      font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .landing-text h2 {
+      font-size: 22px;
+  }
+}
+@media (max-width: 626px) {
+  .landing-text h2 {
+      font-size: 18px;
+  }
+}
+@media (max-width: 580px) {
+  .footer p, footer {
+    font-size: 12px;
+    line-height: 30px;
+  }
+  .footer .icon {
+    height: 30px;
+    width: 30px;
+  }
+}
+@media (max-width: 512px) {
+  .landing-text h2 {
+      font-size: 16px;
+  }
+  .title h1 {
+      font-size: 20px;
+  }
+  nav ul li a {
+      font-size: 17px;
+  }
+  .links p {
+    display: none;
+  }
+  .footer .icon {
+    width: 40px;
+    height: 40px;
+  }
+  .footer p {
+    line-height: 40px;
+  }
+}
+@media (max-width: 455px) {
+  .landing-text h2 {
+      font-size: 14px;
+  }
+  .og {
+      display: none;
+  }
+  .new {
+      display: inline-block;
+  }
+  nav ul li a:hover {
+    text-decoration: none;
+  }
+}
+@media (max-width: 385px) {
+  .footer .icon {
+    margin: 0 10px 0 0;
+  }
+  .links {
+    width: 40%;
+  }
+  .copyright {
+    width: 60%;
+  }
+  .title {
+    width: 60%;
+  }
+  nav {
+    width: 40%;
+  }
+}
