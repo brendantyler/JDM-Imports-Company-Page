@@ -348,13 +348,8 @@ nav {
     width: 80%;
 }
 
-<<<<<<< HEAD
-figure p {
-    font-size: 16px;
-=======
 article p {
     font-size: 15px;
->>>>>>> d1920dc9ed0da6306d75095e11c582c094d61c78
 }
 
 .landing-text{
@@ -372,10 +367,6 @@ article p {
 }
 
 @media (max-width: 400px) {
-<<<<<<< HEAD
-    figure p {
-        font-size: 16px;
-=======
     .text-wrapper {
         width: 100%;
     }
@@ -387,6 +378,5 @@ article p {
     }
     article p {
         font-size: 14px;
->>>>>>> d1920dc9ed0da6306d75095e11c582c094d61c78
     }
 }
