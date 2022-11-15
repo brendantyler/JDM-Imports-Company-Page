@@ -155,8 +155,6 @@ span {
     text-decoration: underline var(--app-red);
 }
 
-
-
 /* ---------------------------------------------------- */
 
 /* Form                                    */
@@ -165,21 +163,23 @@ span {
 
 
 article {
-    width: 50%;
+    width: 60%;
     display: flex;
-    margin: 40px auto;
+    margin: 20px auto;
 }
 
+h2 {text-align: center;}
+
 article p {
-    font-size: 18px;
+    font-size: 20px;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 600;
     text-align: left;
 }
 
 .form-wrapper {
     width: 70vh;
-    box-shadow: 0px 1px 4px 0 rgba(50, 48, 48, 0.2);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     display: flex;
     margin: 40px auto;
     border-radius: 6px;
@@ -309,7 +309,7 @@ footer p, footer {
 
 @media (max-width: 535px) {
 
-article p {
+figure p {
     font-size: 20px;
 }
 
@@ -332,7 +332,7 @@ nav {
     width: 80%;
 }
 
-article p {
+figure p {
     font-size: 16px;
 }
 
@@ -351,7 +351,7 @@ article p {
 }
 
 @media (max-width: 400px) {
-    article p {
+    figure p {
         font-size: 16px;
     }
 }
