@@ -258,3 +258,115 @@ p {
     font-weight: 400;
 }
 
+/* ---------------------------------------------------- */
+
+/* footer 
+
+/* ---------------------------------------------------- */
+
+footer {
+    height: var(--app-footer-height);
+    background-color: #c9d3dd;
+    align-items: center; 
+}
+
+.footer p {
+    line-height: 40px;
+    color: #1a1d28;
+}
+.footer p:hover {
+    text-decoration: underline;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer .icon {
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    margin: 0px 10px 0px 20px;
+    background-color: #1a1d2818;
+    border: 1px solid #1a1d2827;
+    border-radius: 50%;
+    color: #1a1d28bd;
+}
+.footer .icon:hover {
+    background-color: #1a1d2820;
+}
+footer p, footer {
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+.landing-text{
+    width: 90%;
+}
+}
+
+
+@media (max-width: 647px) {
+.form-wrapper{
+    width: 90%;
+}
+.landing-text{
+    width: 80%;
+}
+}
+
+@media (max-width: 600px) {
+    .text-wrapper h2 {
+        font-size: 5rem;
+    }
+}
+
+@media (max-width: 535px) {
+
+figure p {
+    font-size: 20px;
+}
+
+nav ul li a {
+    font-size: 17px;
+}
+}
+
+@media (max-width: 465px) {
+
+.title {
+    width: 60%;
+}
+
+nav {
+    width: 40%;
+}
+
+.form-wrapper{
+    width: 80%;
+}
+
+figure p {
+    font-size: 16px;
+}
+
+.landing-text{
+    width: 70%;
+}
+.text-wrapper h2 {
+    font-size: 4rem;
+}
+.og {
+    display: none;
+}
+.new {
+    display: inline-block;
+}
+}
+
+@media (max-width: 400px) {
+    figure p {
+        font-size: 16px;
+    }
+}
