@@ -371,8 +371,9 @@ article p {
         width: 100%;
     }
     .text-wrapper h2 {
-        font-size: 13px;
+        font-size: 4rem;
     }
+    
     article{
         width: 90%;
     }
