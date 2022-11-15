@@ -406,6 +406,11 @@ img{
   .prev, .next,.text {font-size: 11px}
 }
 
+.dots-container {
+  padding-top: 2vh;
+  text-align: center;
+}
+
 /* ---------------------------------------------------- */
 
 /* Resposive Design                                     */
