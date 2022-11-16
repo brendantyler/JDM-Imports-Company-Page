@@ -162,7 +162,9 @@ span {
 
 
 article {
+
     width: 60%;
+
     display: flex;
     margin: 20px auto;
 }
@@ -170,10 +172,12 @@ article {
 h2 {text-align: center;}
 
 article p {
+
     font-size: 20px;
     text-transform: uppercase;
     font-weight: 600;
     text-align: left;
+
 }
 
 .form-wrapper {

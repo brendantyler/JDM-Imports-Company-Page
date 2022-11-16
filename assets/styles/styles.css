@@ -194,6 +194,7 @@ nav ul li + li {
 
 .about-field h2 {
     font-size: 28px;
+    text-transform: uppercase;
 }
 
 .about-field h3 {
