@@ -9,9 +9,8 @@
         <title>Contact | JDM Imports</title>   
         <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
         <link rel="stylesheet" href="assets/styles/contact-us.css" media="screen">
-        <link rel="stylesheet" href="assets/styles/base.css" media="screen">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <script src="assets/script/index.js" defer></script>
+        <script src="assets/script/contact.js" defer></script>
     </head>
     <body>
         <section class="hero">
@@ -64,10 +63,10 @@
                     <form action="#">
                         
                         <div class="form-input">
-                            <input type="text" class="fname" placeholder="First and Last name *" required>
+                            <input type="text" class="fname" placeholder="First and Last name *">
                         </div>
                         <div class="form-input">
-                            <input type="text" class="email-me" placeholder="Email *" required>
+                            <input type="email" class="email-me" placeholder="Email *">
                         </div>
                         <div class="form-input">
                             <input type="text" class="lname" placeholder="Phone Number (optional)">
@@ -77,45 +76,45 @@
                         </div>
                         <p>Fields with * are required</p>
                         <div class="submit-btn">
-                            <input type="submit" value="Submit">
+                            <button class="send">Submit</button>
                         </div>
                     </form>
                 </section>
             </section>
                 
-                <footer class="flexbox">
-                    <div class="container footer flexbox">
-                        <div class="links flexbox">
-                            <a href="index.html">
-                                <div class="footer-over flexbox">
-                                    <div class="icon flexbox">
-                                        <i class="fa-solid fa-house"></i>
-                                    </div>
-                                    <p>Home</p>
+            <footer class="flexbox">
+                <div class="container footer flexbox">
+                    <div class="links flexbox">
+                        <a href="index.html">
+                            <div class="footer-over flexbox">
+                                <div class="icon flexbox">
+                                    <i class="fa-solid fa-house"></i>
                                 </div>
-                            </a>
-                            <a href="index.html#about-sect">
-                                <div class="footer-over flexbox">
-                                    <div class="icon flexbox">
-                                        <i class="fa-solid fa-users"></i>
-                                    </div>
-                                    <p>About Us</p>
+                                <p>Home</p>
+                            </div>
+                        </a>
+                        <a href="./index.html#about-sect">
+                            <div class="footer-over flexbox">
+                                <div class="icon flexbox">
+                                    <i class="fa-solid fa-users"></i>
                                 </div>
-                            </a>
-                            <a href="contact-us.html">
-                                <div class="footer-over flexbox">
-                                    <div class="icon flexbox">
-                                        <i class="fa-solid fa-message"></i>
-                                    </div>
-                                    <p>Contact Us</p>
+                                <p>About Us</p>
+                            </div>
+                        </a>
+                        <a href="contact-us.html">
+                            <div class="footer-over flexbox">
+                                <div class="icon flexbox">
+                                    <i class="fa-solid fa-message"></i>
                                 </div>
-                            </a>
-                        </div>
-                        <div class="copyright flexbox">
-                            <p>&copy; JDM Imports 2022</p>
-                        </div>
+                                <p>Contact Us</p>
+                            </div>
+                        </a>
                     </div>
-                </footer>
+                    <div class="copyright half flexbox">
+                        <p>&copy; JDM Imports 2022</p>
+                    </div>
+                </div>
+            </footer>
                 
     </body>
 </html>
