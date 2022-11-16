@@ -165,16 +165,16 @@ span {
 
 
 article {
-    width: 50%;
+    width: 55%;
     display: flex;
     margin: 40px auto;
 }
 
 article p {
-    font-size: 18px;
+    font-size: 22px;
     text-transform: uppercase;
-    font-weight: 400;
-    text-align: left;
+    font-weight: 600;
+    text-align: center;
 }
 
 .form-wrapper {
